@@ -12,4 +12,16 @@ class ArrayTest < MiniTest::Test
     def test_it_squares
         assert_equal [1, 4, 9, 16, 25], @array.square()
     end
+
+    def test_it_cubes
+        assert_equal [1, 8, 27, 64, 125], @array.cube()
+    end
+
+    def test_it_sums
+        assert_equal 15, @array.sum()
+    end
+
+    def test_it_averages
+        assert_equal 3, @array.average()
+    end
 end
