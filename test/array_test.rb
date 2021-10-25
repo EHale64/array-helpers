@@ -24,4 +24,12 @@ class ArrayTest < MiniTest::Test
     def test_it_averages
         assert_equal 3, @array.average()
     end
+
+    def test_it_returns_evens
+       assert_equal [2, 4], @array.even()
+    end
+
+    def test_it_returns_odds
+        assert_equal [1, 3, 5], @array.odd()
+    end
 end

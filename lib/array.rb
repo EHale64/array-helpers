@@ -12,7 +12,18 @@ class Array
     end
 
     def average
-        # binding.pry
         self.sum / self.count
+    end
+    
+    def even
+        self.select do |number| 
+            number.even?
+        end
+    end
+
+    def odd
+        self.select do |num|
+            num.odd?
+        end
     end
 end
